@@ -3,68 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>midterm-practical-lucman</title>
-<<link rel="stylesheet" href="css/style.css">>
+    <title>Student Events</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
 
     <header>
-        <h1>Website Title</h1>
+        <h1>Student Events</h1>
 
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#events">Events</a>
+            <a href="#register">Register</a>
         </nav>
     </header>
 
     <main>
 
-        <section>
-            <h2>About</h2>
-            <p>Website content goes here.</p>
+        <section id="home">
+    <h2>Welcome to Student Events</h2>
+    <p>Discover upcoming activities and events for students.</p>
+
+    <img src="assets/zee1.jfif" alt="Students participating in a school event">
+    <img src="assets/zee2.jfif" alt="Students attending a student activity">
+</section>
         </section>
 
-        <section>
-            <h2>Data</h2>
+        <section id="events">
+            <h2>Upcoming Events</h2>
 
             <table>
-                <caption>Sample Data</caption>
+                <caption>Student Event Schedule</caption>
 
                 <thead>
                     <tr>
-                        <th scope="col">Item</th>
-                        <th scope="col">Details</th>
+                        <th scope="col">Event</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Location</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr>
-                        <td>Example</td>
-                        <td>Information</td>
+                        <td>Student Orientation</td>
+                        <td>October 10, 2026</td>
+                        <td>Student Hall</td>
+                    </tr>
+                    <tr>
+                        <td>Creative Workshop</td>
+                        <td>October 15, 2026</td>
+                        <td>Room 204</td>
+                    </tr>
+                    <tr>
+                        <td>Sports Day</td>
+                        <td>October 20, 2026</td>
+                        <td>School Gym</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <section>
-            <h2>Contact</h2>
+        <section id="register">
+            <h2>Register for an Event</h2>
 
             <form>
-                <label for="name">Name</label>
+                <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" required>
 
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
 
-                <button type="submit">Submit</button>
+                <label for="event">Choose an Event</label>
+                <select id="event" name="event" required>
+                    <option value="">Select an event</option>
+                    <option value="orientation">Student Orientation</option>
+                    <option value="workshop">Creative Workshop</option>
+                    <option value="sports">Sports Day</option>
+                </select>
+
+                <button type="submit">Register</button>
             </form>
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 Midterm Practical</p>
+        <p>&copy; 2026 Student Events</p>
     </footer>
 
 </body>
